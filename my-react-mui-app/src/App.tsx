@@ -7,18 +7,18 @@ import { AuthProvider } from "./contexts/AuthContext";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#6ebad3",
-      contrastText: "#ffffff",
+      main: "#6ebad3", // メインカラー
+      contrastText: "#ffffff", // テキストカラー
     },
     secondary: {
-      main: "#e69b56",
+      main: "#e69b56", // セカンダリーカラー
     },
     background: {
-      default: "#f0f4f7",
-      paper: "#ffffff",
+      default: "#f0f4f7", // 背景色
+      paper: "#ffffff", // 紙の色（カードやモーダルの背景色など）
     },
     text: {
-      primary: "#2c3e50",
+      primary: "#2c3e50", // 主要なテキストカラー
     },
   },
   shape: {

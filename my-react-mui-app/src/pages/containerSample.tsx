@@ -1,0 +1,19 @@
+import { Typography } from "@mui/material";
+import { Container } from "@mui/material";
+export const ContainerSample = () => {
+  return (
+    <div>
+      <Typography variant="h2">コンテナサンプル</Typography>
+      <Container
+        sx={{
+          height: "250px",
+          width: "250px",
+          backgroundColor: "primary.main",
+          color: "primary.main",
+        }}
+      >
+        <Typography variant="body1">コンテナ内のテキスト</Typography>
+      </Container>
+    </div>
+  );
+};
