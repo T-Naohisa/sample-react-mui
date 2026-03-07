@@ -3,6 +3,7 @@ import { Stack } from "@mui/system";
 import { Card } from "@mui/material";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { HomeCard } from "../../components/molecules/HomeCard";
 export const Home = () => {
   /**
    * useAuthはundefinedの場合errorオブジェクトを返すので、
@@ -10,64 +11,30 @@ export const Home = () => {
    * そうでない場合はlogin関数を取得して、ログイン処理を行う
    */
   const navigate = useNavigate();
+  const urlNavi = (url: string) => {
+    navigate(url);
+  };
   return (
     <>
       <Typography variant="h4">ホーム画面</Typography>
 
       {/* 縦3列、横4列でカードを並べる */}
       <Stack spacing={3} direction="row" flexWrap="wrap" justifyContent="center">
-        <Card>
-          <CardContent>
-            <Typography variant="h5">カード1</Typography>
-            <Typography variant="body1">Containerのサンプル</Typography>
-          </CardContent>
-          <Stack justifyContent={"flex-end"}>
-            <CardActions>
-              <Button
-                variant="contained"
-                onClick={() => {
-                  navigate("/container-sample");
-                }}
-              >
-                遷移
-              </Button>
-            </CardActions>
-          </Stack>
-        </Card>
-        <Card>
-          <CardContent>
-            <Typography variant="h5">カード2</Typography>
-            <Typography variant="body1">Stackのサンプル</Typography>
-          </CardContent>
-          <Stack justifyContent={"center"}>
-            <CardActions>
-              <Button
-                variant="contained"
-                onClick={() => {
-                  navigate("/stack-sample");
-                }}
-              >
-                遷移
-              </Button>
-            </CardActions>
-          </Stack>
-        </Card>
-        <Card>
-          <CardContent>
-            <Typography variant="h5">カード1</Typography>
-            <Typography variant="body1">Containerのサンプル</Typography>
-          </CardContent>
-          <CardActions>
-            <Button
-              variant="contained"
-              onClick={() => {
-                navigate("/container-sample");
-              }}
-            >
-              遷移
-            </Button>
-          </CardActions>
-        </Card>
+        <HomeCard
+          title="カード1"
+          description="Containerのサンプル"
+          onClick={() => urlNavi("/container-sample")}
+        />
+        <HomeCard
+          title="カード2"
+          description="Stackのサンプル"
+          onClick={() => urlNavi("/stack-sample")}
+        />
+        <HomeCard
+          title="カード3"
+          description="xxxのサンプル"
+          onClick={() => urlNavi("/container-sample")}
+        />
       </Stack>
     </>
   );
