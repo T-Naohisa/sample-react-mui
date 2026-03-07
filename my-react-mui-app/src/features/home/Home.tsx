@@ -11,7 +11,7 @@ export const Home = () => {
    */
   const navigate = useNavigate();
   return (
-    <div>
+    <>
       <Typography variant="h4">ホーム画面</Typography>
 
       {/* 縦3列、横4列でカードを並べる */}
@@ -69,16 +69,6 @@ export const Home = () => {
           </CardActions>
         </Card>
       </Stack>
-      <Stack spacing={2} direction="row" flexWrap="wrap" justifyContent="center">
-        <div>test4</div>
-        <div>test5</div>
-        <div>test6</div>
-      </Stack>
-      <Stack spacing={2} direction="row" flexWrap="wrap" justifyContent="center">
-        <div>test7</div>
-        <div>test8</div>
-        <div>test9</div>
-      </Stack>
-    </div>
+    </>
   );
 };

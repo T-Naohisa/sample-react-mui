@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import { Container } from "@mui/material";
 export const ContainerSample = () => {
   return (
-    <div>
+    <>
       <Typography variant="h2">コンテナサンプル</Typography>
       <Container
         sx={{
@@ -14,6 +14,6 @@ export const ContainerSample = () => {
       >
         <Typography variant="body1">コンテナ内のテキスト</Typography>
       </Container>
-    </div>
+    </>
   );
 };

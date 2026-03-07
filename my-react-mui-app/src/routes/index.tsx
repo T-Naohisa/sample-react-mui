@@ -1,9 +1,9 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { Home } from "../pages/home";
-import { LoginPage } from "../pages/login";
+import { Home } from "../features/home/Home";
+import { LoginPage } from "../pages/Login";
 import { AuthGuard } from "./guard";
-import { ContainerSample } from "../pages/containerSample";
-import { StackSample } from "../pages/stackSample";
+import { ContainerSample } from "../features/containerSample/ContainerSample";
+import { StackSample } from "../features/stackSample/StackSample";
 export const Router = () => {
   return (
     <Routes>
