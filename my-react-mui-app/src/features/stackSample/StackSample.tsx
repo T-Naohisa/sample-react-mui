@@ -1,5 +1,4 @@
 import { Stack } from "@mui/material";
-import { Primary } from "../../stories/Button.stories";
 
 export const StackSample = () => {
   return (
