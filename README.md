@@ -20,9 +20,10 @@ src/
 │ ├── components/ # この機能でしか使わない部品  
 │ ├── hooks/ # この機能専用のロジック  
 │ └── types/ # 型定義  
+├── pages/ # ログインなどの共通のもの  
 ├── hooks/ # プロジェクト共通のフック（useAxiosなど）  
 ├── context/ # AuthContext.tsx など  
-└── pages/ # 各画面のルートコンポーネント
+└── routes/ # 各画面のルートコンポーネント
 
 # 4.データの流れ
 
