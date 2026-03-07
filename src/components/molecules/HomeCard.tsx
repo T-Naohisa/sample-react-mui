@@ -12,7 +12,7 @@ export type HomeCardProps = {
 export const HomeCard = (props: HomeCardProps) => {
   return (
     <>
-      <Card>
+      <Card sx={{ width: 200, height: 150, display: "flex", flexDirection: "column" }}>
         <CardContent>
           <Typography variant="h5">{props.title}</Typography>
           <Typography variant="body1">{props.description}</Typography>
@@ -30,7 +30,6 @@ export const HomeCard = (props: HomeCardProps) => {
           </CardActions>
         </Stack>
       </Card>
-      ;
     </>
   );
 };

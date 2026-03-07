@@ -19,22 +19,29 @@ export const Home = () => {
       <Typography variant="h4">ホーム画面</Typography>
 
       {/* 縦3列、横4列でカードを並べる */}
-      <Stack spacing={3} direction="row" flexWrap="wrap" justifyContent="center">
-        <HomeCard
-          title="カード1"
-          description="Containerのサンプル"
-          onClick={() => urlNavi("/container-sample")}
-        />
-        <HomeCard
-          title="カード2"
-          description="Stackのサンプル"
-          onClick={() => urlNavi("/stack-sample")}
-        />
-        <HomeCard
-          title="カード3"
-          description="xxxのサンプル"
-          onClick={() => urlNavi("/container-sample")}
-        />
+      <Stack spacing={3}>
+        <Stack spacing={3} direction="row" flexWrap="wrap" justifyContent="center">
+          <HomeCard
+            title="カード1"
+            description="Containerのサンプル"
+            onClick={() => urlNavi("/container-sample")}
+          />
+          <HomeCard
+            title="カード2"
+            description="Stackのサンプル"
+            onClick={() => urlNavi("/stack-sample")}
+          />
+          <HomeCard
+            title="カード3"
+            description="drawerのサンプル"
+            onClick={() => urlNavi("/drawer-sample")}
+          />
+          <HomeCard
+            title="カード4"
+            description="xxxのサンプル"
+            onClick={() => urlNavi("/container-sample")}
+          />
+        </Stack>
       </Stack>
     </>
   );
