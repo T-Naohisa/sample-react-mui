@@ -1,5 +1,6 @@
 import { Button, Drawer, Stack } from "@mui/material";
 import { SimpleTreeView, TreeItem } from "@mui/x-tree-view";
+import { CheckboxTree } from "./CheckboxTree";
 export type DrawerMoleculeProps = {
   isDrawerOpen: boolean;
   setIsDrawerOpen: (isOpen: boolean) => void;
@@ -34,6 +35,7 @@ export const TreeDrawer = ({ isDrawerOpen, setIsDrawerOpen }: DrawerMoleculeProp
     ));
   };
 
+  // IDは選択中のものを配列で保持する
   return (
     <>
       <Drawer anchor="right" open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
@@ -51,6 +53,7 @@ export const TreeDrawer = ({ isDrawerOpen, setIsDrawerOpen }: DrawerMoleculeProp
           >
             {renderTreeItems(dummyTreeData)}
           </SimpleTreeView>
+          <CheckboxTree data={dummyTreeData}></CheckboxTree>
           <Button
             variant="contained"
             sx={{ width: "100px" }}
