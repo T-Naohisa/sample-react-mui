@@ -4,6 +4,9 @@ import { SimpleTreeView } from "@mui/x-tree-view/SimpleTreeView";
 import { TreeItem } from "@mui/x-tree-view/TreeItem";
 import type { TreeProps } from "./TreeDrawer";
 
+/**
+ * 引数の定義
+ */
 export const CheckboxTree = ({ data }: { data: TreeProps[] }) => {
   const [checkedIds, setCheckedIds] = useState<string[]>([]);
 

@@ -1,11 +1,19 @@
-import { FormControlLabel } from "@mui/material";
-import { Checkbox } from "@mui/material";
+import { Checkbox, FormControlLabel } from "@mui/material";
+
+/**
+ * 引数の定義
+ */
 export type CheckboxLabelProps = {
   label: string;
   checked: boolean;
   onChange: (checked: boolean) => void;
 };
 
+/**
+ * ラベル付きのチェックボックスのUIコンポーネント
+ * @param param0
+ * @returns
+ */
 export const CheckboxLabel = ({ label, checked, onChange }: CheckboxLabelProps) => {
   return (
     <>

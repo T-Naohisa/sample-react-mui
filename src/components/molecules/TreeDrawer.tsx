@@ -1,18 +1,27 @@
-import { useState } from "react";
 import { Button, Drawer, Stack } from "@mui/material";
 import { SimpleTreeView, TreeItem } from "@mui/x-tree-view";
+import { useState } from "react";
+
+/**
+ * 型定義
+ */
 export type DrawerMoleculeProps = {
   isDrawerOpen: boolean;
   setIsDrawerOpen: (isOpen: boolean) => void;
 };
 
-// ツリーは再帰的な型定義にする
+/**
+ * ツリーの型定義
+ */
 export type TreeProps = {
   id: string;
   label: string;
   children?: TreeProps[]; // 子要素は同じ型の配列
 };
 
+/**
+ * ツリー表示を確認するダミーデータ
+ */
 const dummyTreeData: TreeProps[] = [
   {
     id: "root",
@@ -26,6 +35,12 @@ const dummyTreeData: TreeProps[] = [
   { id: "child4", label: "子要素 4" },
 ];
 
+/**
+ * メインコンポーネント
+ * ドロワーにツリー上にデータを表示する
+ * @param param0
+ * @returns
+ */
 export const TreeDrawer = ({ isDrawerOpen, setIsDrawerOpen }: DrawerMoleculeProps) => {
   const [items, setItems] = useState<Array<string>>([]);
   const renderTreeItems = (nodes: TreeProps[]) => {
