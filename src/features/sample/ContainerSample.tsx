@@ -1,5 +1,10 @@
 import { Typography } from "@mui/material";
 import { Container } from "@mui/material";
+
+/**
+ * MUIのコンテナーを使用した場合のサンプル画面
+ * @returns
+ */
 export const ContainerSample = () => {
   return (
     <>

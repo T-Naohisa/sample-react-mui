@@ -1,5 +1,10 @@
 import { Stack } from "@mui/material";
 
+/**
+ * MUIのStackを使用したサンプル画面
+ *
+ * @returns
+ */
 export const StackSample = () => {
   return (
     <>

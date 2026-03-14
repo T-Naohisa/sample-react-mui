@@ -53,7 +53,7 @@ export default defineConfig([
           pathGroupsExcludedImportTypes: ["react"],
           alphabetize: {
             order: "asc", // 昇順にソート
-            caseInsensitive: true, // 大文字小文字を区別しない
+            caseInsensitive: false, // 大文字小文字を区別しない
           },
           "newlines-between": "always", // グループごとに改行を入れる
         },

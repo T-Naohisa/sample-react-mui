@@ -1,8 +1,13 @@
 import { Container, Paper, Stack, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../contexts/AuthContext";
+import { useAuth } from "../../contexts/AuthContext";
 
+/**
+ * アプリ共通のログイン画面
+ * アクセス時に必ず最初に表示する
+ * @returns
+ */
 export const LoginPage = () => {
   const authResult = useAuth();
   if ("id" in authResult) {
