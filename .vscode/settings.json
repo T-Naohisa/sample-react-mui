@@ -1,0 +1,15 @@
+{
+  // 保存時にPrettierでフォーマット
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // ESLintの設定
+  "editor.codeActionsOnSave": {
+    // 未使用のインポートを削除・並べ替え
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  // ファイルの自動保存
+  "files.autoSave": "onFocusChange"
+}

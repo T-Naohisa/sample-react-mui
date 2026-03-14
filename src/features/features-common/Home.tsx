@@ -1,7 +1,5 @@
-import { CardActions, CardContent, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { Stack } from "@mui/system";
-import { Card } from "@mui/material";
-import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { HomeCard } from "../../components/molecules/HomeCard";
 export const Home = () => {

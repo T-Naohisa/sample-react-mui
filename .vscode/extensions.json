@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint", // 静的解析
+    "esbenp.prettier-vscode", // 自動フォーマッター
+    "dsznajder.es7-react-js-snippets"
+  ]
+}

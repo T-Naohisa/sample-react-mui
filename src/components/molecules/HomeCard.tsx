@@ -1,8 +1,5 @@
-import { CardActions, CardContent, Typography } from "@mui/material";
+import { Button, Card, CardActions, CardContent, Typography } from "@mui/material";
 import { Stack } from "@mui/system";
-import { Card } from "@mui/material";
-import { Button } from "@mui/material";
-
 export type HomeCardProps = {
   title: string;
   description: string;
@@ -17,6 +14,7 @@ export const HomeCard = (props: HomeCardProps) => {
           <Typography variant="h5">{props.title}</Typography>
           <Typography variant="body1">{props.description}</Typography>
         </CardContent>
+
         <Stack justifyContent={"flex-end"}>
           <CardActions>
             <Button

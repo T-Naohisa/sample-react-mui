@@ -1,6 +1,5 @@
 import { FormControlLabel } from "@mui/material";
 import { Checkbox } from "@mui/material";
-
 export type CheckboxLabelProps = {
   label: string;
   checked: boolean;
