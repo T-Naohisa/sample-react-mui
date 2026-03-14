@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { Home } from "../features/features-common/Home";
-import { LoginPage } from "../pages/Login";
+import { LoginPage } from "../features/features-common/Login";
 import { AuthGuard } from "./guard";
 import { ContainerSample } from "../features/sample/ContainerSample";
 import { StackSample } from "../features/sample/StackSample";
