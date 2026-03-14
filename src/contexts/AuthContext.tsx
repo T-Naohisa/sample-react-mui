@@ -12,14 +12,19 @@ export interface AuthContextType {
   login: (id: string, name: string) => void;
   logout: () => void;
 }
+// errorの型定義
 export interface Error {
   id: string;
   message: string;
 }
 
-// contextの作成
+// AuthContextの作成
 export const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
+/**
+ * ログインログアウトの関数をもつWrapper部品
+ * グローバル化し、どの画面でもログアウトなどの実装ができるようにしている
+ */
 export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   const [user, setUser] = useState<User>(null);
 

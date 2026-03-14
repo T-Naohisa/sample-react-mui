@@ -1,6 +1,9 @@
 import { Navigate, Outlet } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 
+/**
+ * ユーザー認証をおこなう
+ */
 export const AuthGuard = () => {
   const authResult = useAuth();
   console.log("AuthGuard", authResult);
