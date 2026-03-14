@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button, Drawer, Stack } from "@mui/material";
 import { SimpleTreeView, TreeItem } from "@mui/x-tree-view";
 import { CheckboxTree } from "./CheckboxTree";
@@ -27,6 +28,7 @@ const dummyTreeData: TreeProps[] = [
 ];
 
 export const TreeDrawer = ({ isDrawerOpen, setIsDrawerOpen }: DrawerMoleculeProps) => {
+  const [items, setItems] = useState<Array<string>>([]);
   const renderTreeItems = (nodes: TreeProps[]) => {
     return nodes.map((node) => (
       <TreeItem itemId={node.id} label={node.label}>
@@ -49,11 +51,23 @@ export const TreeDrawer = ({ isDrawerOpen, setIsDrawerOpen }: DrawerMoleculeProp
             onSelectedItemsChange={(event, itemIds) => {
               console.log(event?.target); // クリックされたアイテムのID
               console.log("選択されたID:", itemIds);
+              setItems(itemIds);
             }}
           >
             {renderTreeItems(dummyTreeData)}
           </SimpleTreeView>
           <CheckboxTree data={dummyTreeData}></CheckboxTree>
+          <Button
+            variant="contained"
+            sx={{ width: "100px" }}
+            onClick={() => {
+              setIsDrawerOpen(false);
+              // 選択内容を反映させる
+              console.log(items);
+            }}
+          >
+            データ再取得
+          </Button>
           <Button
             variant="contained"
             sx={{ width: "100px" }}
