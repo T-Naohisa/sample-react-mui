@@ -1,6 +1,5 @@
 import { Button, Card, CardActions, CardContent, Typography } from "@mui/material";
 import { Stack } from "@mui/system";
-
 /**
  * 引数の定義
  */

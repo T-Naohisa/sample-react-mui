@@ -10,6 +10,19 @@
     "source.fixAll.eslint": "explicit"
   },
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+
+  // auto-close-tag の設定
+  "auto-close-tag.enableAutoCloseTag": true,
+  "auto-close-tag.enableAutoCloseSlash": true,
+  "auto-close-tag.enableAutoCloseAngleBracket": true,
+
   // ファイルの自動保存
-  "files.autoSave": "onFocusChange"
+  "files.autoSave": "onFocusChange",
+  // iconの設定
+  "workbench.iconTheme": "vscode-icons",
+  // .env のハイライト (dotenv 拡張が有効な場合)
+  "files.associations": {
+    ".env": "dotenv",
+    ".env.*": "dotenv"
+  }
 }

@@ -1,7 +1,12 @@
 {
+  // 推奨拡張機能
   "recommendations": [
     "dbaeumer.vscode-eslint", // 静的解析
     "esbenp.prettier-vscode", // 自動フォーマッター
-    "dsznajder.es7-react-js-snippets"
+    "formulahendry.auto-close-tag", // HTML/JSX のタグを自動で閉じる
+    "eamodio.gitlens", // GitLens (Gitの履歴/ブレーム/機能拡張)
+    "christian-kohler.path-intellisense", // パスの補完
+    "vscode-icons-team.vscode-icons", // アイコンテーマ
+    "mikestead.dotenv" // .env の構文ハイライト+補完
   ]
 }
