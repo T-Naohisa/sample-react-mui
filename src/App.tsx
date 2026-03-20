@@ -1,8 +1,8 @@
-import "./App.css";
-import { BrowserRouter } from "react-router-dom";
-import { Router } from "./routes";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+import { Router } from "./app/routes";
 import { AuthProvider } from "./contexts/AuthContext";
 const theme = createTheme({
   palette: {

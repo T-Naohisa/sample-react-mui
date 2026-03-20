@@ -1,10 +1,10 @@
-import { Routes, Route, Navigate } from "react-router-dom";
-import { Home } from "../features/features-common/Home";
-import { LoginPage } from "../features/features-common/Login";
+import { Navigate, Route, Routes } from "react-router-dom";
+import { Home } from "../../features/home/index";
+import { LoginPage } from "../../features/login/index";
+import { ContainerSample } from "../../features/sample/components/container-sample/index";
+import { DrawerSample } from "../../features/sample/components/drawer-sample/index";
+import { StackSample } from "../../features/sample/components/stack-sample/index";
 import { AuthGuard } from "./guard";
-import { ContainerSample } from "../features/sample/ContainerSample";
-import { StackSample } from "../features/sample/StackSample";
-import { DrawerSample } from "../features/sample/DrawerSample";
 
 /**
  * アプリのルーティング設定

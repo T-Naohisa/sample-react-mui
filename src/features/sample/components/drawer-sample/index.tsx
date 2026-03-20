@@ -1,6 +1,6 @@
 import Button from "@mui/material/Button";
 import { useState } from "react";
-import { TreeDrawer } from "../../components/molecules/TreeDrawer";
+import { TreeDrawer } from "../../../../components/molecules/TreeDrawer";
 
 /**
  * MUIドロワーを開くサンプル画面

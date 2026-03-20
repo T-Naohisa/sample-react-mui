@@ -2,12 +2,13 @@ import { Typography } from "@mui/material";
 import { Stack } from "@mui/system";
 import { useNavigate } from "react-router-dom";
 import { HomeCard } from "../../components/molecules/HomeCard";
+
+/**
+ * useAuthはundefinedの場合errorオブジェクトを返すので、
+ * resultを確認し、errorの場合はエラー画面を表示する
+ * そうでない場合はlogin関数を取得して、ログイン処理を行う
+ */
 export const Home = () => {
-  /**
-   * useAuthはundefinedの場合errorオブジェクトを返すので、
-   * resultを確認し、errorの場合はエラー画面を表示する
-   * そうでない場合はlogin関数を取得して、ログイン処理を行う
-   */
   const navigate = useNavigate();
   const urlNavi = (url: string) => {
     navigate(url);
