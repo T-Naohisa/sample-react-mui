@@ -16,11 +16,15 @@ src/
 │ ├── atoms/  
 │ └── molecules/ # ここに SelectableTreeView.tsx など  
 ├── features/ # 機能単位（今回なら「ItemSelection」など）  
-│ └── ItemSelection/  
+│ ├── index.tsx # 画面  
 │ ├── components/ # この機能でしか使わない部品  
-│ ├── hooks/ # この機能専用のロジック  
-│ └── types/ # 型定義  
-├── pages/ # ログインなどの共通のもの  
+│ │ ├── component # 部品  
+│ │ └── index.tsx # 画面  
+│ ├── features/ # 再帰的なfeatures  
+│ │ ├── index.tsx # 画面  
+│ │ ├── components/ # この機能でしか使わない部品  
+│ │ │ ├── component # 部品  
+│ │ │ └── index.tsx # 画面  
 ├── hooks/ # プロジェクト共通のフック（useAxiosなど）  
 ├── context/ # AuthContext.tsx など  
 └── routes/ # 各画面のルートコンポーネント
