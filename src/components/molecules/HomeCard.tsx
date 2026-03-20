@@ -1,5 +1,5 @@
-import { Button, Card, CardActions, CardContent, Typography } from "@mui/material";
-import { Stack } from "@mui/system";
+import { Button, Card, CardActions, CardContent, Typography } from '@mui/material';
+import { Stack } from '@mui/system';
 /**
  * 引数の定義
  */
@@ -17,16 +17,16 @@ export type HomeCardProps = {
 export const HomeCard = (props: HomeCardProps) => {
   return (
     <>
-      <Card sx={{ width: 200, height: 150, display: "flex", flexDirection: "column" }}>
+      <Card sx={{ width: 200, height: 150, display: 'flex', flexDirection: 'column' }}>
         <CardContent>
-          <Typography variant="h5">{props.title}</Typography>
-          <Typography variant="body1">{props.description}</Typography>
+          <Typography variant='h5'>{props.title}</Typography>
+          <Typography variant='body1'>{props.description}</Typography>
         </CardContent>
 
-        <Stack justifyContent={"flex-end"}>
+        <Stack justifyContent={'flex-end'}>
           <CardActions>
             <Button
-              variant="contained"
+              variant='contained'
               onClick={() => {
                 props.onClick();
               }}

@@ -1,4 +1,4 @@
-import { Checkbox, FormControlLabel } from "@mui/material";
+import { Checkbox, FormControlLabel } from '@mui/material';
 
 /**
  * 引数の定義
@@ -18,7 +18,7 @@ export const CheckboxLabel = ({ label, checked, onChange }: CheckboxLabelProps) 
   return (
     <>
       <FormControlLabel
-        sx={{ width: "100px", margin: "0px" }}
+        sx={{ width: '100px', margin: '0px' }}
         control={
           <Checkbox
             checked={checked}

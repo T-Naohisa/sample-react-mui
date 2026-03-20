@@ -1,8 +1,11 @@
-import { useState } from "react";
-import { CheckboxLabel } from "./CheckboxLabel";
-import { SimpleTreeView } from "@mui/x-tree-view/SimpleTreeView";
-import { TreeItem } from "@mui/x-tree-view/TreeItem";
-import type { TreeProps } from "./TreeDrawer";
+import { useState } from 'react';
+
+import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView';
+import { TreeItem } from '@mui/x-tree-view/TreeItem';
+
+import { CheckboxLabel } from './CheckboxLabel';
+
+import type { TreeProps } from './TreeDrawer';
 
 /**
  * 引数の定義
@@ -16,7 +19,7 @@ export const CheckboxTree = ({ data }: { data: TreeProps[] }) => {
     } else {
       setCheckedIds((prev) => prev.filter((item) => item !== id)); // 削除
     }
-    console.log("ids:" + checkedIds);
+    console.log('ids:' + checkedIds);
   };
 
   const renderTreeItems = (nodes: TreeProps[]) => {

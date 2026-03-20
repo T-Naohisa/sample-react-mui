@@ -1,4 +1,4 @@
-import { useContext, createContext, useState } from "react";
+import { createContext, useContext, useState } from 'react';
 
 // contextで保持するユーザー情報の型
 export type User = {
@@ -41,7 +41,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 export const useAuth = (): AuthContextType | Error => {
   const context = useContext(AuthContext);
   if (context === undefined) {
-    const error: Error = { id: "001", message: "not userInfo" };
+    const error: Error = { id: '001', message: 'not userInfo' };
     return error;
   }
   return context;
