@@ -2,7 +2,7 @@ import js from '@eslint/js';
 import importPlugin from 'eslint-plugin-import';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
-import unuserdPlugin from 'eslint-plugin-unused-imports';
+import unusedPlugin from 'eslint-plugin-unused-imports';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 export default tseslint.config(
@@ -26,7 +26,7 @@ export default tseslint.config(
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
-      'unused-imports': unuserdPlugin,
+      'unused-imports': unusedPlugin,
       import: importPlugin,
     },
     // 個別のルール
