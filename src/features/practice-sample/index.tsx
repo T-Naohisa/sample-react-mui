@@ -12,7 +12,7 @@ export const UserList: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false);
 
   // 1. APIからユーザー一覧を取得
-
+  // useEffectの中身の依存性を外すように書き換える
   useEffect(() => {
     const fetchUsers = async () => {
       setLoading(true);
@@ -25,7 +25,7 @@ export const UserList: React.FC = () => {
   }, []); // ← ここで何かが起きている？
 
   // 2. 検索キーワードでフィルタリング
-  // useMemo
+  // 関数をuseMemo化して性能を改善する
   const filteredUsers = useMemo(() => {
     console.log('Filtering...');
     return users.filter((u) => u.name.toLowerCase().includes(keyword.toLowerCase()));
