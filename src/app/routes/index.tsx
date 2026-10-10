@@ -1,10 +1,10 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 
+import { ContainerSample } from '../../features/container-sample/index';
+import { DrawerSample } from '../../features/drawer-sample/index';
 import { Home } from '../../features/home/index';
 import { LoginPage } from '../../features/login/index';
-import { ContainerSample } from '../../features/sample/components/container-sample/index';
-import { DrawerSample } from '../../features/sample/components/drawer-sample/index';
-import { StackSample } from '../../features/sample/components/stack-sample/index';
+import { StackSample } from '../../features/stack-sample/index';
 import { AuthGuard } from './guard';
 
 /**
